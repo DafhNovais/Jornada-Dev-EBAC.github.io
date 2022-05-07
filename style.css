@@ -128,3 +128,43 @@
     color: #eeeeee;
     line-height: 1.5rem;
 }
+@media (max-width: 900px) {
+    .resume-contents {
+        width: 100%;
+        margin: 0 auto;
+        grid-template-columns: repeat(7, 1fr);
+    }
+}
+@media (max-width: 670px) {
+    .resume-contents {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .left-section {
+        box-shadow: none;
+    }
+    .left-section-contents{
+        padding: 2rem 2rem;
+    }
+    .right-section {
+        border-radius: 0px;
+    }
+    .profile{
+        display: grid;
+        place-items: center;
+    }
+    .profile .profile-image{
+        margin: 0 auto;
+        justify-self: center;
+        width: 256px;
+        border-radius: 100%;
+        border: 0.2rem solid #fff;
+    }
+    .box-side{
+        flex-direction: column;
+        margin-bottom: 2rem;
+     }
+     .left-description,.right-description{
+         width: 100%;
+         margin-bottom: 1rem;
+     }
+}
